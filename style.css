@@ -2735,3 +2735,22 @@ input {
     color: #ddd;
     line-height: 1.6;
 }
+
+/* Lisää väliä kuvien ja seuraavien osioiden väliin */
+.hero img,
+section img {
+    margin-bottom: 24px;
+}
+
+
+/* Väli hero-kuvan ja Tervetuloa-kortin väliin */
+.hero-content {
+    margin-top: 24px;
+}
+
+
+/* Palvelut- ja yhteydenotto-osioiden väli */
+.contact-cta {
+    margin-top: 32px;
+}
+
