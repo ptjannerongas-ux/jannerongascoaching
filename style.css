@@ -2535,3 +2535,15 @@ input {
         min-width: 0;
     }
 }
+
+/* Pitkän sähköpostiosoitteen sovittaminen mobiilinäyttöön */
+@media (max-width: 768px) {
+    .contact a,
+    .contact p,
+    .contact-info a,
+    .contact-info p {
+        overflow-wrap: anywhere;
+        word-break: normal;
+        max-width: 100%;
+    }
+}
