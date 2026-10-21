@@ -23,8 +23,6 @@
     <nav class="overlay-menu">
         <a href="index.html">Etusivu</a>
         <a href="hinnasto.html">Hinnasto</a>
-        <a href="treeniohjelmat.html">Treeniohjelmat</a>
-        <a href="ruokavaliot.html">Ruokavaliot</a>
         <a href="yhteystiedot.html">Yhteystiedot</a>
     </nav>
 </header>
@@ -32,6 +30,64 @@
 <main class="subpage">
 
 <section class="contact-page">
+
+
+<section class="contact-form-section">
+    <div class="contact-form">
+        <h2>Ota yhteyttä</h2>
+        <p>
+            Onko sinulla kysyttävää valmennuksesta?
+            Lähetä viesti, niin palaan asiaan mahdollisimman pian.
+        </p>
+
+        <form id="contact-form"
+              action="https://formspree.io/f/xvkzjyrr"
+              method="POST">
+
+            <label for="name">Nimi *</label>
+            <input type="text" id="name" name="name"
+                   autocomplete="name" required>
+
+            <label for="phone">Puhelinnumero</label>
+            <input type="tel" id="phone" name="phone"
+                   autocomplete="tel">
+
+            <label for="email">Sähköposti *</label>
+            <input type="email" id="email" name="email"
+                   autocomplete="email" required>
+
+            <label for="topic">Mitä asiasi koskee?</label>
+            <select id="topic" name="topic">
+                <option value="Henkilökohtainen valmennus">
+                    Henkilökohtainen valmennus
+                </option>
+                <option value="Etävalmennus">Etävalmennus</option>
+                <option value="Treeniohjelma">Treeniohjelma</option>
+                <option value="Ruokavalio">Ruokavalio</option>
+                <option value="Muu asia">Muu asia</option>
+            </select>
+
+            <label for="message">Viesti *</label>
+            <textarea id="message" name="message"
+                      rows="6" required></textarea>
+
+            <button type="submit">Lähetä viesti</button>
+        </form>
+        <div id="form-success" class="form-success" hidden>
+    <div class="success-icon">✓</div>
+    <h2>Kiitos yhteydenotostasi!</h2>
+    <p>
+        Kiitos yhteydenottopyynnöstä! Olen sinuun yhteydessä
+        mahdollisimman pian.
+    </p>
+</div>
+
+<div id="form-error" class="form-error" role="alert" hidden>
+    Viestin lähetys ei onnistunut. Yritä hetken kuluttua uudelleen.
+</div>
+    </div>
+</section>
+
 
     <div class="page-header fade-up">
         <p class="section-tag"></p>
@@ -64,6 +120,37 @@
 
     </div>
 </section>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <a href="index.html" class="footer-logo-link" aria-label="Janne Rongas Coaching – etusivu">
+            <img
+                src="images/logo-png.png"
+                alt="Janne Rongas Coaching"
+                class="footer-logo"
+            >
+        </a>
+
+        <p class="footer-tagline">
+        </p>
+
+        <nav class="footer-nav" aria-label="Alatunnisteen navigaatio">
+            <a href="index.html">Etusivu</a>
+            <a href="hinnasto.html">Hinnasto</a>
+            <a href="yhteystiedot.html">Yhteystiedot</a>
+        </nav>
+
+        <div class="footer-links">
+            <a href="mailto:pt.jannerongas@gmail.com"><span aria-hidden="true">✉</span> Sähköposti</a>
+            <a href="https://instagram.com/jjanneron" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◎</span> Instagram</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Janne Rongas Coaching. Kaikki oikeudet pidätetään.</p>
+        </div>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>

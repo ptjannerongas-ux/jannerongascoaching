@@ -2577,3 +2577,161 @@ input {
         max-width: 100%;
     }
 }
+
+
+/* Yhteydenottolomake */
+.contact-form-section {
+    width: 100%;
+    padding: 40px 20px 70px;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 35px;
+    box-sizing: border-box;
+    background: #111;
+    border: 1px solid #292929;
+    border-radius: 24px;
+    color: #fff;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.contact-form > p {
+    color: #bbb;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input:not([type="checkbox"]),
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    background: #1b1b1b;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 10px;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    outline: 2px solid #999;
+    outline-offset: 2px;
+}
+
+.contact-form .privacy-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 12px 0;
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contact-form .privacy-consent input {
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.contact-form a {
+    color: #ddd;
+    overflow-wrap: anywhere;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: #484848;
+}
+
+@media (max-width: 600px) {
+    .contact-form-section {
+        padding: 25px 14px 45px;
+    }
+
+    .contact-form {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+}
+
+
+/* Lomakkeen lähetyksen palaute */
+.form-success {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 24px;
+}
+
+.form-success[hidden],
+.form-error[hidden] {
+    display: none;
+}
+
+.form-success .success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 20px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.form-success h2 {
+    margin-bottom: 14px;
+}
+
+.form-success p {
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.form-error {
+    margin-top: 16px;
+    color: #ddd;
+    line-height: 1.6;
+}

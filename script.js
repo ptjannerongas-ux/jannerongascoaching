@@ -113,3 +113,53 @@ function changeSlide(direction) {
     slideIndex += direction;
     showSlide(slideIndex);
 }
+
+
+const contactForm = document.getElementById("contact-form");
+const formSuccess = document.getElementById("form-success");
+const formError = document.getElementById("form-error");
+
+if (contactForm && formSuccess && formError) {
+    contactForm.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        formError.hidden = true;
+
+        const submitButton = contactForm.querySelector(
+            'button[type="submit"]'
+        );
+
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = "Lähetetään...";
+        }
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error("Lähetys epäonnistui");
+            }
+
+            contactForm.hidden = true;
+            formSuccess.hidden = false;
+            formSuccess.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        } catch (error) {
+            formError.hidden = false;
+
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = "Lähetä viesti";
+            }
+        }
+    });
+}
