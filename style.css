@@ -861,6 +861,8 @@ input {
         font-size: clamp(14px, 4.5vw, 18px); /* Kutistaa tekstiä puhelimen koon mukaan */
         max-width: 75%;
         overflow-wrap: break-word;
+        display: inline-block;
+        padding-right: 20px;
     }
 
     /* MENU BUTTON */
