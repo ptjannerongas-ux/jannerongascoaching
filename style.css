@@ -156,6 +156,7 @@ header {
     font-weight: 700;
     letter-spacing: 1px;
     color: white;
+    position: relative;
     z-index: 10001; /* Logo pysyy klikattavana myös valikon ollessa auki */
 }
 
