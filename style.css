@@ -2754,3 +2754,16 @@ section img {
     margin-top: 32px;
 }
 
+/* Logon linkin tyylit */
+.logo a {
+    text-decoration: none;    /* Poistaa tekstin alleviivauksen */
+    color: #ffffff;           /* Vaihda tästä logon pääväri (esim. musta/tummanharmaa) */
+    font-weight: bold;        /* Tekee tekstistä paksun */
+    font-size: 1.5rem;        /* Logon tekstikoko, muuta tarvittaessa */
+    transition: opacity 0.2s; /* Tekee hiiren hover-efektistä pehmeän */
+}
+
+/* Efekti, kun hiiren vie logon päälle */
+.logo a:hover {
+    opacity: 0.8;             /* Muuttuu aavistuksen haaleammaksi, jolloin käyttäjä huomaa sen olevan linkki */
+}
