@@ -2547,3 +2547,33 @@ input {
         max-width: 100%;
     }
 }
+
+/* Yhteystiedot – mobiilikorjaus */
+@media (max-width: 768px) {
+    .contact-card,
+    .contact-item,
+    .contact-box,
+    .contact-info {
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-card,
+    .contact-item,
+    .contact-box {
+        overflow-wrap: anywhere;
+    }
+
+    .contact-card a,
+    .contact-item a,
+    .contact-box a,
+    .contact-info a,
+    .contact a {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        white-space: normal;
+        min-width: 0;
+        max-width: 100%;
+    }
+}
