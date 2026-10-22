@@ -2896,18 +2896,6 @@ section img {
     padding-bottom: 18px;
 }
 
-.pricing-page .page-header h1::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
-    height: 2px;
-    background: #555;
-    border-radius: 2px;
-}
-
 /* Hinnastosivun otsikon viiva */
 .pricing-page .page-header h1::after {
     content: "";
@@ -2915,7 +2903,7 @@ section img {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 320px;
+    width: 160px;
     max-width: 80vw;
     height: 5px;
     border-radius: 10px;
