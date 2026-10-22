@@ -2907,3 +2907,10 @@ section img {
     background: #555;
     border-radius: 2px;
 }
+
+/* Mobiilin viivan leveys */
+@media (max-width: 768px) {
+    .pricing-page .page-header h1::after {
+        width: 80px;
+    }
+}
