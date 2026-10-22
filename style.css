@@ -2908,9 +2908,21 @@ section img {
     border-radius: 2px;
 }
 
-/* Mobiilin viivan leveys */
-@media (max-width: 768px) {
-    .pricing-page .page-header h1::after {
-        width: 160px;
-    }
+/* Hinnastosivun otsikon viiva */
+.pricing-page .page-header h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    max-width: 80vw;
+    height: 5px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,
+        #444,
+        #eee,
+        #444
+    );
 }
