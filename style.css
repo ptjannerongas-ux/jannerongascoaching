@@ -2905,7 +2905,7 @@ section img {
     transform: translateX(-50%);
     width: 160px;
     max-width: 80vw;
-    height: 5px;
+    height: 2px;
     border-radius: 10px;
     background: linear-gradient(
         to right,
@@ -2917,6 +2917,39 @@ section img {
 
 @media (max-width: 768px) {
     .pricing-page .page-header h1::after {
+        width: 100px;
+        max-width: 100px;
+    }
+}
+
+.contact-page .page-header h1 {
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 18px;
+}
+
+.contact-page .page-header h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    max-width: 80vw;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        #444,
+        #eee,
+        #444
+    );
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-page .page-header h1::after {
         width: 100px;
         max-width: 100px;
     }
