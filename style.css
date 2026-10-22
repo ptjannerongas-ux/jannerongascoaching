@@ -2914,3 +2914,10 @@ section img {
         #444
     );
 }
+
+@media (max-width: 768px) {
+    .pricing-page .page-header h1::after {
+        width: 100px;
+        max-width: 100px;
+    }
+}
