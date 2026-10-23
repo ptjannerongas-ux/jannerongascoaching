@@ -2555,24 +2555,36 @@ input {
     }
 }
 
-/* Pitkän sähköpostiosoitteen sovittaminen mobiilinäyttöön */
-@media (max-width: 768px) {
-    .contact a,
-    .contact p,
-    .contact-info a,
-    .contact-info p {
-        overflow-wrap: anywhere;
-        word-break: normal;
-        max-width: 100%;
-    }
+
+/* YHTEYSTIEDOT – MOBIILIN ASETTELU JA LINKIT */
+
+.contact a,
+.contact-info a,
+.contact-card a,
+.contact-item a,
+.contact-box a {
+    color: #eeeeee;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    transition: color 0.2s ease;
 }
 
-/* Yhteystiedot – mobiilikorjaus */
+.contact a:hover,
+.contact-info a:hover,
+.contact-card a:hover,
+.contact-item a:hover,
+.contact-box a:hover {
+    color: #aaaaaa;
+}
+
+/* Mobiili */
 @media (max-width: 768px) {
+    .contact,
+    .contact-info,
     .contact-card,
     .contact-item,
-    .contact-box,
-    .contact-info {
+    .contact-box {
         min-width: 0;
         max-width: 100%;
         box-sizing: border-box;
@@ -2584,18 +2596,21 @@ input {
         overflow-wrap: anywhere;
     }
 
+    .contact a,
+    .contact p,
+    .contact-info a,
+    .contact-info p,
     .contact-card a,
     .contact-item a,
-    .contact-box a,
-    .contact-info a,
-    .contact a {
-        overflow-wrap: anywhere;
-        word-break: break-word;
-        white-space: normal;
-        min-width: 0;
+    .contact-box a {
         max-width: 100%;
+        min-width: 0;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: normal;
     }
 }
+
 
 
 /* Yhteydenottolomake */
@@ -3232,4 +3247,74 @@ section img {
 .footer-icon:focus-visible {
     outline: 2px solid #ffffff;
     outline-offset: 4px;
+}
+
+
+/* YHTEYSTIETOJEN LINKKIEN VÄRIT */
+
+.contact-page a,
+.contact-info a {
+    color: #eeeeee;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.contact-page a:hover,
+.contact-info a:hover {
+    color: #aaaaaa;
+    text-decoration: underline;
+}
+
+
+/* YHTEYSTIEDOT – LINKKIEN VÄRIT */
+
+.contact-list .contact-card,
+.contact-list .contact-card:link,
+.contact-list .contact-card:visited {
+    color: #eeeeee !important;
+    -webkit-text-fill-color: #eeeeee;
+    text-decoration: none !important;
+}
+
+.contact-list .contact-card:hover,
+.contact-list .contact-card:focus-visible {
+    color: #bdbdbd !important;
+    -webkit-text-fill-color: #bdbdbd;
+    text-decoration: underline !important;
+}
+
+/* YHTEYSTIEDOT – MOBIILIN ASETTELU */
+
+@media (max-width: 768px) {
+    .contact-list {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .contact-list .contact-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .contact-list .contact-row > span {
+        min-width: 0;
+    }
+
+    .contact-list .contact-card {
+        display: block;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
 }
