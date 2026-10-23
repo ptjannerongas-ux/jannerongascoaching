@@ -3095,3 +3095,96 @@ section img {
         margin: 20px auto 0;
     }
 }
+
+
+/* =====================================
+   HINNASTO CTA
+===================================== */
+
+.pricing-cta {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 24px;
+    margin: 35px auto;
+    background: linear-gradient(135deg, #202020, #111111);
+    border-top: 1px solid #393939;
+    border-bottom: 1px solid #393939;
+    text-align: center;
+}
+
+.pricing-cta-content {
+    width: min(760px, 100%);
+    margin: 0 auto;
+}
+
+.pricing-cta-label {
+    margin-bottom: 14px;
+    color: #bdbdbd;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.pricing-cta h2 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.2;
+}
+
+.pricing-cta-content > p:not(.pricing-cta-label) {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    color: #d0d0d0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.pricing-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    background: #eeeeee;
+    color: #171717;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.pricing-cta-btn:hover {
+    background: transparent;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .pricing-cta {
+        padding: 48px 22px;
+        margin: 24px auto;
+    }
+
+    .pricing-cta-content > p:not(.pricing-cta-label) {
+        font-size: 15px;
+    }
+
+
+.pricing-cta-btn {
+    width: auto;
+    max-width: 100%;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 12px 24px;
+}
+
+}
+
+
+.pricing-cta .pricing-cta-btn {
+    width: fit-content;
+    padding: 12px 24px;
+}
