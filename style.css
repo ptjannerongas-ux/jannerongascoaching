@@ -3188,3 +3188,48 @@ section img {
     width: fit-content;
     padding: 12px 24px;
 }
+
+
+/* FOOTERIN IKONIT */
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: color 0.25s ease,
+                background 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.footer-icon svg {
+    display: block;
+    width: 21px;
+    height: 21px;
+}
+
+.footer-icon:hover {
+    color: #171717;
+    background: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.footer-icon:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
