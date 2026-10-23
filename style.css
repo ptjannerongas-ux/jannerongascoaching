@@ -3318,3 +3318,35 @@ section img {
         word-break: normal;
     }
 }
+
+
+/* YHTEYSTIEDOT – MOBIILIN KORTTIEN ASETTELU */
+
+@media (max-width: 600px) {
+    .contact-list .contact-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        text-align: center;
+        padding: 24px 18px;
+    }
+
+    .contact-list .contact-row > span {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-list .contact-row .contact-card {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+        word-break: normal;
+        line-height: 1.5;
+    }
+}
