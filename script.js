@@ -84,35 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-let slideIndex = 0;
 
-function showSlide(index) {
-    const slides = document.querySelectorAll(".image-slider .slide");
-
-    if (!slides.length) return;
-
-    if (index >= slides.length) {
-        slideIndex = 0;
-    }
-
-    if (index < 0) {
-        slideIndex = slides.length - 1;
-    }
-
-    slides.forEach(slide => {
-    slide.style.opacity = "0";
-    slide.classList.remove("active");
-});
-
-    slides[slideIndex].classList.add("active");
-
-    slides[slideIndex].style.opacity = "1";
-}
-
-function changeSlide(direction) {
-    slideIndex += direction;
-    showSlide(slideIndex);
-}
 
 
 const contactForm = document.getElementById("contact-form");

@@ -3350,3 +3350,12 @@ section img {
         line-height: 1.5;
     }
 }
+
+/* ABOUT – yksittäinen esittelykuva */
+.about-image .about-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
