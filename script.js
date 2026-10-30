@@ -135,3 +135,19 @@ if (contactForm && formSuccess && formError) {
         }
     });
 }
+
+// Avaa alkukysely automaattisesti URL-parametrin perusteella
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get("alkukartoitus") === "avaa") {
+        openQuiz();
+
+        // Poistetaan URL-parametri osoiteriviltä
+        window.history.replaceState(
+            {},
+            document.title,
+            window.location.pathname
+        );
+    }
+});
